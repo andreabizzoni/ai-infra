@@ -21,7 +21,7 @@ We need a strict contract between the Researchers training these models and the 
 3.  **Registration:** The artifact is pushed to **MLflow Registry** with a strict schema (inputs: text, outputs: logits).
 4.  **Deployment:** KServe watches the registry. When a model is tagged prod, it spins up a Triton pod.
 
-## 3. Workflow
+## 2. Workflow
 
 ```mermaid
 flowchart LR
@@ -46,7 +46,7 @@ flowchart LR
     end
 ```
 
-## 4. Timeline
+## 3. Timeline
 
 | Phase | Duration | Deliverable |
 | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ flowchart LR
 | **Phase 2** | Weeks 3-5 | Port one existing "critical path" model (e.g., sentiment) to this new stack. Prove the latency gains. |
 | **Phase 3** | Weeks 5-8 | Enable KServe auto-scaling. Integrate with the main trading loop via gRPC. |
 
-## 5. Challenges & Risks
+## 4. Challenges & Risks
 
 *   **Triton Overhead:** Triton is complex. The config.pbtxt files are verbose and easy to mess up. We need to write a generator script so we never have to touch them.
 *   **String Model Versioning:** "Which version of the sentiment model was running during the flash crash?" We need strict logging. Every prediction response must include the model_version in the metadata.

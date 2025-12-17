@@ -89,7 +89,7 @@ For critical flows that involve business decisions, we can keep humans in the lo
 3. A human receives a Slack notification, reviews the proposed action, and clicks "Approve".
 4. The Agent resumes exactly where it left off.
 
-## 4. Visualizing a Complex Agent
+## 3. Workflow
 Here is how a complex agent looks when composed of these patterns:
 
 ```mermaid
@@ -122,14 +122,14 @@ stateDiagram-v2
     Aggregator --> [*]
 ```
 
-## 5. Timeline
+## 4. Timeline
 
 | Phase | Duration | Deliverable |
 | :--- | :--- | :--- |
 | **Phase 1** | Weeks 1-3 | Wrap LangGraph with our Pydantic enforcement layer. |
 | **Phase 2** | Weeks 3-8 | Build standard tools (SQL Connector, Vector DB Search, Calculator) using the MCP standard. |
 
-## 6. Challenges & Risks
+## 5. Challenges & Risks
 
 *   **Infinite Loop:** We need strict max_turns limits on every graph execution.
 *   **Context Window Pollution:** Agents love to stuff the context with useless history. The SDK needs an automatic Summarizer node that compresses history when it gets too long.

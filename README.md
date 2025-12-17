@@ -2,7 +2,7 @@
 
 # DRW - AI infrastructure proposal
 
-This repository contains a comprehensive proposal for building a state-of-the-art AI infrastructure for DRW. The plan addresses four key areas:
+This repository contains a comprehensive proposal for building state-of-the-art AI infrastructure for DRW. The plan addresses four key areas:
 
 ## Documents
 
