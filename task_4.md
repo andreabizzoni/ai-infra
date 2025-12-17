@@ -90,7 +90,7 @@ For critical flows that involve business decisions, we can keep humans in the lo
 4. The Agent resumes exactly where it left off.
 
 ## 4. Visualizing a Complex Agent
-Here is how a complex "Research & Calculation" agent looks when composed of these patterns:
+Here is how a complex agent looks when composed of these patterns:
 
 ```mermaid
 stateDiagram-v2

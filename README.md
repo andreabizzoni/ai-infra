@@ -8,7 +8,7 @@ This repository contains a comprehensive proposal for building a state-of-the-ar
 
 1.  **[Rapid Evaluation & Deployment Pipeline](task_1.md)**
     *   *Goal:* Evaluate and deploy new LLM models within 24 hours of publication.
-    *   *Key Tech:* vLLM, Ray, LiteLLM, Automated Gauntlet Evals.
+    *   *Key Tech:* vLLM, LiteLLM, Automated Gauntlet Evals.
 
 2.  **[RAG & Fine-Tuning Infrastructure](task_2.md)**
     *   *Goal:* Infrastructure for fine-tuning and building RAG workflows.
